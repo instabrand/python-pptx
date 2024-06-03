@@ -133,6 +133,13 @@ class BaseShape(object):
         self._element._nvXxPr.cNvPr.name = value
 
     @property
+    def alt_text(self):
+        """
+        Alternative text for the shape
+        """
+        return self._element.shape_alt_text
+
+    @property
     def part(self):
         """The package part containing this shape.
 
